@@ -32,3 +32,12 @@ _percentString
 2016-09-19 16:27:51.392 RunloopTest[4741:3608624] statusBar-->foregroundView---------------
 2016-09-19 16:27:51.393 RunloopTest[4741:3608624] UIStatusBarTimeItemView
 2016-09-19 16:27:51.394 RunloopTest[4741:3608624] 手机时间time = 16:27
+
+***测试
+```
+ //把列表缓存
+            if(self.objectListArr && self.objectListArr.count>0){
+                //保存此 categoryId类型的数据
+                [[AIDataManager shareDataManager] saveObject:[self.objectListArr copy] cacheKey: [self categoryCacheId]];
+            }
+```
